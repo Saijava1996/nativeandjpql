@@ -4,7 +4,7 @@ pipeline{
      stage('git repo & clean'){
         steps{
           bat "rmdir /s /q nativeandjpq"
-          bat 'git clone https://github.com/Saijava1996/nativeandjpq.git"
+          bat "git clone https://github.com/Saijava1996/nativeandjpq.git"
           bat "mvn clean -f  nativeandjpql"
        }    
   }
